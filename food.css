@@ -1,0 +1,107 @@
+:root {
+  --background: #fffce1;
+  --header: #9cc6db;
+  --footer: #d46d25;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: var(--background);
+  padding: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  padding: 15px;
+  background-color: var(--header);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  border-radius: 16px;
+}
+.header a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Keeps the text color the same as the parent element */
+}
+
+/* Top container holding the ingredients list and image side-by-side */
+.box {
+  display: flex;
+  flex-direction: row-reverse; /* Places the image on the right */
+  gap: 24px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+/* Forces the ingredients section to sit tightly at the top left */
+.food_recipie {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 2%;
+  margin-top: 1.6%;
+}
+
+.food_recipie h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+.food_recipie ul {
+  padding-left: 20px;
+}
+
+.food_recipie li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+/* Resizes image precisely to 600px by 600px */
+img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Bottom instructions container */
+.food_instructions {
+  background-color: var(--header);
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+.food_instructions h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+.food_instructions ol {
+  padding-left: 20px;
+}
+
+.food_instructions li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: var(--footer);
+}
