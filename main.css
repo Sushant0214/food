@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+:root {
+  --background: #fffce1;
+  --header: #9cc6db;
+  --footer: #d46d25;
+  --border: black;
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  background-color: var(--header);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.header a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Keeps the text color the same as the parent element */
+}
+.main-header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--header);
+  border-radius: 16px;
+}
+
+.land {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.land img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.hero-text-overlay {
+  position: absolute;
+  bottom: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+main {
+  margin: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid var(--header);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.box {
+  padding: 20px;
+  background-color: var(--header);
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+img {
+  border: 2px solid var(--border);
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.box h1 {
+  font-size: 1.2rem;
+}
+
+.box p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#btn {
+  display: inline-block;
+  margin-left: auto;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+#btn a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: var(--footer);
+}
